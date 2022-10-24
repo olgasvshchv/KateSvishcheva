@@ -1,0 +1,93 @@
+
+@font-face {
+  font-family: ApfelGrotezk-Regular;
+  src: url(ApfelGrotezk-Regular.woff2);
+}
+@font-face {
+  font-family: Lack-Regular;
+  src: url(Lack-Regular.woff2);
+}
+html {
+  font-family: ApfelGrotezk-Regular;
+}
+body.landing_page {
+  height: 100vh;
+  background-image: linear-gradient(135deg,#411356,#E45531);
+  background-size: 150%;
+  animation: bg-animation 30s infinite alternate;
+}
+@keyframes bg-animation {
+  0% {background--position: left}
+  100% {background-position: right;}
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-content: center;
+  font-size: 24.4px;
+  position: sticky;
+  margin: 30px 80px 0px;
+}
+
+
+header.landing-page>* {
+  color: white;
+}
+header.landing-page a:last-child{
+  border: 3px solid #E2EC92;
+}
+header>*{
+  padding:10px;
+  text-decoration: none;
+  color:#E45531;
+}
+header a:last-child {
+  border: 3px solid #E45531;
+  position: absolute;
+  right: 0;
+}
+
+header a:nth-child(3):hover {
+  color:#411356;
+  border: 3px solid #411356;
+  background-color: #E2EC92;
+} 
+.logo {
+  margin: 0px;
+  padding-bottom: 20px;
+  font-family: Lack-Regular;
+  font-size: 39.6px;
+  
+}
+header a {
+  align-self: center;
+}
+h1 {
+  color:#411356;
+  font-size: 34,56px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 50px;
+}
+.container {
+  overflow: hidden;
+  height: 100vh;
+  /* background-color: blue; */
+
+}
+.cat {
+  fill: #E45531;
+}
+svg.cat:hover #left-eye{
+  stroke-width: "0.5";
+  fill: blue;
+}
+/* @keyframes wink {
+
+} */
+/* svg {
+  width: 220px;
+  height: 307px;
+} */
