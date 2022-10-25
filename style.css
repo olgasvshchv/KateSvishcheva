@@ -39,14 +39,17 @@ header {
   
   background-color: white;
 }
-
-
+/*landing-page*/
+header.landing-page {
+  background-color: transparent;
+}
 header.landing-page>* {
   color: white;
 }
 header.landing-page a:last-child{
   border: 3px solid #E2EC92;
 }
+
 header>*{
   padding:10px;
   text-decoration: none;
@@ -77,7 +80,6 @@ header a {
 }
 h1 {
   color:#411356;
-  background-color: white;
   font-size: 34,56px;
   display: flex;
   justify-content: center;
