@@ -4,6 +4,10 @@
   src: url(ApfelGrotezk-Regular.woff2);
 }
 @font-face {
+  font-family: ApfelGrotezk-Fett;
+  src: url(ApfelGrotezk-Fett.woff2);
+}
+@font-face {
   font-family: Lack-Regular;
   src: url(Lack-Regular.woff2);
 }
@@ -28,7 +32,12 @@ header {
   align-content: center;
   font-size: 24.4px;
   position: sticky;
-  margin: 30px 80px 0px;
+  top: 0;
+  margin: 30px 0px 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+  background-color: white;
 }
 
 
@@ -45,8 +54,10 @@ header>*{
 }
 header a:last-child {
   border: 3px solid #E45531;
-  position: absolute;
-  right: 0;
+  width: fit-content;
+  justify-self: end;
+  /* position: absolute;
+  right: 0; */
 }
 
 header a:nth-child(3):hover {
@@ -56,7 +67,7 @@ header a:nth-child(3):hover {
 } 
 .logo {
   margin: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   font-family: Lack-Regular;
   font-size: 39.6px;
   
@@ -66,24 +77,61 @@ header a {
 }
 h1 {
   color:#411356;
+  background-color: white;
   font-size: 34,56px;
   display: flex;
   justify-content: center;
   margin: 0px 0px 50px;
+  position: sticky;
+  top: 70px;
 }
 .container {
   overflow: hidden;
   height: 100vh;
   /* background-color: blue; */
+}
+h2, h3 {
+  font-family: ApfelGrotezk-Fett;
+  font-size: 34.56px;
+  text-decoration: underline;
+  color: #411356;
+}
+h2 {
+  margin-left: 10vh;
+}
+h3 {
+  color:#E45531;
+  text-decoration: none;
+}
+.left img {
+  width: 160px;
+  
+}
+.right img {
+  width: 322px;
+  margin-right: 2rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40vh; 
+  justify-content: space-between;
 
 }
-.cat {
-  fill: #E45531;
+.menu .images, 
+.menu .solo-text {
+  display: flex;
+  justify-content: space-between;
 }
-svg.cat:hover #left-eye{
-  stroke-width: "0.5";
-  fill: blue;
+.menu .images {
+  align-items: baseline;
 }
+
+
+/* .right {
+  position: relative;
+  right: 0px;
+} */
 /* @keyframes wink {
 
 } */
