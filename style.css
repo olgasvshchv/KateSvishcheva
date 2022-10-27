@@ -12,9 +12,9 @@
   src: url(Lack-Regular.woff2);
 }
 html {
-  font-family: ApfelGrotezk-Regular;
+  font-family: ApfelGrotezk-Regular, Helvetica;
 }
-body.landing_page {
+body.home {
   height: 100vh;
   background-image: linear-gradient(135deg,#411356,#E45531);
   background-size: 150%;
@@ -25,110 +25,116 @@ body.landing_page {
   100% {background-position: right;}
 }
 
-
 header {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  align-content: center;
-  font-size: 24.4px;
   position: sticky;
   top: 0;
-  margin: 30px 0px 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  
+  display: flex;
+  flex-direction: column;
   background-color: white;
 }
-/*landing-page*/
-header.landing-page {
-  background-color: transparent;
-}
-header.landing-page>* {
-  color: white;
-}
-header.landing-page a:last-child{
-  border: 3px solid #E2EC92;
+nav {
+  font-size: 24.4px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-header>*{
+nav>*{
   padding:10px;
   text-decoration: none;
-  color:#E45531;
-}
-header a:last-child {
-  border: 3px solid #E45531;
-  width: fit-content;
-  justify-self: end;
-  /* position: absolute;
-  right: 0; */
+  color:#E45531
 }
 
-header a:nth-child(3):hover {
+nav a:last-child {
+  border: 3px solid #E45531;
+  justify-self: right;
+}
+nav a:last-child:hover {
   color:#411356;
   border: 3px solid #411356;
   background-color: #E2EC92;
 } 
 .logo {
-  margin: 0px;
-  padding-bottom: 15px;
   font-family: Lack-Regular;
   font-size: 39.6px;
+  margin: 0;
   
 }
-header a {
+/*landing-page*/
+header.home {
+  background-color: transparent;
+}
+nav.home>* {
+  color: white;
+}
+nav.home a:last-child{
+  border: 3px solid #E2EC92;
   align-self: center;
+  padding: 10px;
+  text-decoration: none;
 }
-h1 {
+h2 {
   color:#411356;
-  font-size: 34,56px;
-  display: flex;
-  justify-content: center;
-  margin: 0px 0px 50px;
-  position: sticky;
-  top: 70px;
+  font-size: 34.56px;
+  padding-right: 85px;
+  margin: 15px auto 20px;
+  /* align-self: center; */
+  /* position: sticky;
+  top: 70px; */
 }
+/*big cat picture that is not in design*/
 .container {
   overflow: hidden;
   height: 100vh;
   /* background-color: blue; */
 }
-h2, h3 {
-  font-family: ApfelGrotezk-Fett;
+h3, h4, h5, h6 {
+  font-family: ApfelGrotezk-Fett, Helvetica;
+}
+h3, h4 {
   font-size: 34.56px;
-  text-decoration: underline;
   color: #411356;
 }
-h2 {
-  margin-left: 10vh;
-}
 h3 {
+  margin-left: 25vh;
+  text-decoration: underline;
+}
+h4 {
   color:#E45531;
-  text-decoration: none;
 }
-.left img {
-  width: 160px;
-  
+h5, h6 {
+  color:#E45531;
+  font-size: 24px;
 }
-.right img {
+h5 {
+  margin-left: 25vh;
+}
+p, li {
+  font-size: 20px;
+  line-height: 35px;;
+}
+#cat {
+  width: 160px; 
+}
+.dog img {
   width: 322px;
   margin-right: 2rem;
 }
 .menu {
   display: flex;
-  flex-direction: column;
   margin: 0 40vh; 
   justify-content: space-between;
-
 }
-.menu .images, 
-.menu .solo-text {
+.cat {
+  align-self: flex-end;
+}
+
+.cat-sitting {
   display: flex;
-  justify-content: space-between;
+  margin: 0 25vh;
+  justify-content: space-around;
 }
-.menu .images {
-  align-items: baseline;
-}
-
 
 /* .right {
   position: relative;
