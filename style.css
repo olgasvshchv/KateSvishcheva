@@ -97,7 +97,6 @@ h3, h4 {
   color: #411356;
 }
 h3 {
-  margin-left: 25vh;
   text-decoration: underline;
 }
 h4 {
@@ -121,20 +120,113 @@ p, li {
   width: 322px;
   margin-right: 2rem;
 }
-.menu {
-  display: flex;
-  margin: 0 40vh; 
-  justify-content: space-between;
+.services {
+  height: 100vh;
+}
+.services h3 {
+  margin-left: 25vh;
 }
 .cat {
   align-self: flex-end;
 }
+.menu {
+  display: flex;
+  margin: 7vh 40vh; 
+  justify-content: space-between;
+}
+@media (max-width:1000px) {
+  .menu {
+    margin: 7vh 20vh;
+  }
+}
+@media (max-width:825px) {
+  nav > a{
+    display: none;
+  }
+  h2 {
+    padding: 0;
+  }
+  .menu {
+    margin:7vh  0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cat {
+    align-self: center;
+  }
+
+  .cat-sitting #cat {
+    display: none;
+  }
+ 
+}
 
 .cat-sitting {
   display: flex;
-  margin: 0 25vh;
-  justify-content: space-around;
+  margin: 0 60vh 10vh 25vh;
+  justify-content: space-between;
 }
+
+.cat-sitting p {
+  max-width: 600px;
+  min-width: 300px;
+}
+.info {
+  display: flex;
+  margin: 0 30vh 10vh;
+  justify-content: space-around;
+  position: relative;
+  
+}
+.info > * {
+  align-items: flex-start;
+  margin: 0;
+}
+.info > h6 {
+  width: fit-content;
+  justify-self: left;
+  
+}
+div.text, ul{
+  width: 70%;
+}
+
+.text p {
+  margin: 0 0 1vh;
+}
+small {
+  font-size: 16px;
+  color:#411356;
+}
+ul {
+  /* list-style-position: inside; */
+  list-style-image: url(dot.svg);
+  padding: 0
+}
+
+/* li::marker {
+  color:#E45531;
+  font-size: 2em;
+} */
+li {
+  line-height: 35px;
+  margin-bottom: 2vh;
+  padding-left: 1em;
+  }
+
+.info img {
+  position: absolute;
+}
+#meow {
+  width: 140px;
+  top: 40vh;
+  right: 70vw;
+}
+#cat2 {
+  width: 220px;
+  right: 15vw;
+}
+/*relative position block goes over header while scrolling*/
 
 /* .right {
   position: relative;
