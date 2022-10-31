@@ -1,15 +1,15 @@
 
 @font-face {
   font-family: ApfelGrotezk-Regular;
-  src: url(ApfelGrotezk-Regular.woff2);
+  src: url(../assets/fonts/ApfelGrotezk-Regular.woff2);
 }
 @font-face {
   font-family: ApfelGrotezk-Fett;
-  src: url(ApfelGrotezk-Fett.woff2);
+  src: url(../assets/fonts/ApfelGrotezk-Fett.woff2);
 }
 @font-face {
   font-family: Lack-Regular;
-  src: url(Lack-Regular.woff2);
+  src: url(../assets/fonts/Lack-Regular.woff2);
 }
 html {
   font-family: ApfelGrotezk-Regular, Helvetica;
@@ -134,36 +134,11 @@ p, li {
   margin: 7vh 40vh; 
   justify-content: space-between;
 }
-@media (max-width:1000px) {
-  .menu {
-    margin: 7vh 20vh;
-  }
-}
-@media (max-width:825px) {
-  nav > a{
-    display: none;
-  }
-  h2 {
-    padding: 0;
-  }
-  .menu {
-    margin:7vh  0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .cat {
-    align-self: center;
-  }
 
-  .cat-sitting #cat {
-    display: none;
-  }
- 
-}
 
 .cat-sitting {
   display: flex;
-  margin: 0 60vh 10vh 25vh;
+  margin: 0 40vh 10vh 25vh;
   justify-content: space-between;
 }
 
@@ -200,10 +175,9 @@ small {
 }
 ul {
   /* list-style-position: inside; */
-  list-style-image: url(dot.svg);
+  list-style-image: url(../assets/images/dot.svg);
   padding: 0
 }
-
 /* li::marker {
   color:#E45531;
   font-size: 2em;
@@ -220,12 +194,71 @@ li {
 #meow {
   width: 140px;
   top: 40vh;
-  right: 70vw;
+  right: 65vw;
 }
 #cat2 {
   width: 220px;
-  right: 15vw;
+  right: 5vh;
 }
+.prices {
+  margin: 25vh;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.ticket {
+  background-image: url(../assets/images/ticket.svg);
+  width: 253.54px;
+  height: 254.85px;
+  position: relative;
+  display: flex;
+
+}
+.prices p {
+  color:#E45531;
+  font-family: ApfelGrotezk-Fett, Helvetica;
+  font-size: 36px;
+}
+.price {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frequency {
+  position: absolute;
+  display: flex;
+  top: 40px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+@media (max-width:1000px) {
+  .menu {
+    margin: 7vh 20vh;
+  }
+}
+@media (max-width:825px) {
+  nav > a{
+    display: none;
+  }
+  h2 {
+    padding: 0;
+  }
+  .menu {
+    margin:7vh  0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cat {
+    align-self: center;
+  }
+
+  .cat-sitting #cat {
+    display: none;
+  }
+}
+
 /*relative position block goes over header while scrolling*/
 
 /* .right {
